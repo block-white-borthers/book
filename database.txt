@@ -1,0 +1,27 @@
+CREATE TABLE `db_books`.`tb_books` ( `ID` VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图书编号' , `bookname` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图书名' , `author` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '作者' , `bookfrom` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '出版社' , PRIMARY KEY (`ID`)) ENGINE = MyISAM;
+
+
+
+CREATE TABLE `db_books`.`tb_books` ( `ID` VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图书编号' , `bookname` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图书名' , `author` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '作者' , `bookfrom` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '出版社' , PRIMARY KEY (`ID`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = '图书表';
+
+
+
+
+INSERT INTO `tb_books` (`ID`, `bookname`, `author`, `bookfrom`) VALUES ('123', '长城', '秦始皇', '秦朝');
+
+
+INSERT INTO `tb_books` (`ID`, `bookname`, `author`, `bookfrom`) VALUES ('128', '喜马拉雅山', '达赖喇嘛', '西藏');
+
+UPDATE `tb_books` SET `bookname`='马嵬之变',`author`='李隆基',`bookfrom`='唐中' WHERE ID='127'
+
+
+DELETE FROM `tb_books` WHERE ID='128'
+
+
+
+
+
+
+CREATE TABLE `%s`.`%s` ( `ID` VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图书编号' , `bookname` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图书名' , `author` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '作者' , `bookfrom` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '出版社' , PRIMARY KEY (`ID`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = '图书表';
+
+

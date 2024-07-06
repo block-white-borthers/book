@@ -1,0 +1,17 @@
+input the cmd:
+reimp -d libmysql.lib
+dlltool --input-def libmysql.def --dllname libmysql.dll --output-lib libmysql.a -k
+
+english version readme
+Enter the following command on the command line to generate a library file that mingw gcc can use:
+Press alt+d, enter cmd, and then press enter.
+reimp -d libmysql.lib
+dlltool --input-def libmysql.def --dllname libmysql.dll --output-lib libmysql.a -k
+
+
+中文版说明
+在命令行输入以下命令，生成mingw-gcc可以用的库文件：
+按alt+d，输入cmd然后回车。
+
+reimp -d libmysql.lib
+dlltool --input-def libmysql.def --dllname libmysql.dll --output-lib libmysql.a -k
